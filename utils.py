@@ -67,4 +67,3 @@ def get_transforms(split):
             A.Normalize(mean=[0.5], std=[0.5]),
             ToTensorV2(),
         ])
-    

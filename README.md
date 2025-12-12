@@ -42,6 +42,8 @@ Retinal vessel segmentation is crucial for diagnosing and monitoring various oph
 
 ## 📊 Results Summary
 
+## 🚀 Results t<img width="2349" height="2382" alt="Segmentation-predictions" src="https://github.com/user-attachments/assets/b0ad400f-a4ab-4ee1-99b4-92d567ba06e1" />
+
 | Metric | Score | Clinical Significance |
 |--------|-------|----------------------|
 | **F1 Score** | **0.7519** | Excellent balance of precision and recall |
@@ -146,8 +148,6 @@ Our approach:
 ```
 
 ---
-
-## 🚀 Quick Start
 
 ### Installation
 

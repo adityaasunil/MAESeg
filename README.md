@@ -257,14 +257,6 @@ Epoch 200: F1 = 0.75  (Converged)
 
 ## 🔍 Evaluation & Metrics
 
-### Comprehensive Metrics
-
-```python
-from metrics import calculate_metrics
-
-metrics = calculate_metrics(predictions, ground_truth, threshold=0.50)
-```
-
 **Output:**
 ```
 Accuracy:   0.9468  (94.7% of pixels correct)

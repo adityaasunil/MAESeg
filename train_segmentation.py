@@ -191,7 +191,7 @@ class CombinedSegmentationLoss(nn.Module):
         # ========================================
         # 3. Edge loss
         # ========================================
-        edge_loss = self._safe_edge_loss(pred_sig, target)
+        edge_loss = self._edge_loss(pred_sig, target)
 
         # ========================================
         # 4. Total loss
@@ -232,7 +232,7 @@ class CombinedSegmentationLoss(nn.Module):
         thickness = pooled * 5.0  # Scale to approximate pixel width
         return thickness
 
-    def _safe_edge_loss(self, pred, target):
+    def _edge_loss(self, pred, target):
         """
         Safe edge loss using Sobel filters
         Creates filters dynamically on correct device

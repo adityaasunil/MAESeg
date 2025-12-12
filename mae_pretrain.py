@@ -38,12 +38,20 @@ if __name__ == '__main__':
 
 
   save_dir = os.path.join(PROJECT_ROOT, args.save_dir)
+  save_model_dir = os.path.join(PROJECT_ROOT, 'Models')
   save_curve_dir = os.path.join(PROJECT_ROOT, 'visualizations/curves')
   save_img_dir = os.path.join(PROJECT_ROOT, 'visualizations/reconstructions')
+  os.makedirs(save_model_dir, exist_ok=True)
   os.makedirs(save_img_dir, exist_ok=True)
   os.makedirs(save_curve_dir, exist_ok=True)
   os.makedirs(save_dir, exist_ok=True)
   os.makedirs(os.path.join(save_dir, 'visualizations'), exist_ok=True)
+
+  print('Logging directories...')
+  print('Model checkpoints will be saved to: {}'.format(save_dir))
+  print('Model weights will be saved to: {}'.format(save_model_dir))
+  print('Training curves will be saved to: {}'.format(save_curve_dir))
+  print('Reconstructed images will be saved to: {}'.format(save_img_dir))
 
   print('Loading Data....')
   train_data_loader = torch.utils.data.DataLoader(UnlabelledTrainingDataset(), batch_size=min(args.min_batch_size, args.max_batch_size), shuffle=True, num_workers=args.num_workers,pin_memory=True)
@@ -240,7 +248,7 @@ if __name__ == '__main__':
         'model_state_dict': model.state_dict(),
         'optimizer_state_dict': optimizer.state_dict(),
         'history': history,
-      }, os.path.join(save_dir, 'final_model.pth'))
+      }, os.path.join(save_model_dir, 'final_model.pth'))
       print('\n✓ Training complete!')
 
       plot_training_curves(history, 'training_curves.png')

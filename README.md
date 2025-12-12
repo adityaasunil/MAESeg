@@ -153,8 +153,8 @@ Our approach:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/mae-vessel-segmentation.git
-cd mae-vessel-segmentation
+git clone https://github.com/adityaasunil/MAESeg.git
+cd MAESeg
 
 # Install dependencies
 pip install torch torchvision numpy opencv-python albumentations matplotlib tqdm matplotlib
@@ -412,7 +412,7 @@ U-net: Convolutional networks for biomedical image segmentation. MICCAI 2015.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see [LICENSE](https://github.com/adityaasunil/RetinaSegMAE/blob/main/LICENSE) for details.
+This project is licensed under the MIT License - see [LICENSE](https://github.com/adityaasunil/MAESeg/blob/main/LICENSE) for details.
 
 ---
 

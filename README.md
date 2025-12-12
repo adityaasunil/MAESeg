@@ -34,7 +34,6 @@ Retinal vessel segmentation is crucial for diagnosing and monitoring various oph
 - 🎯 **Enhanced Multi-Component Loss Function** with thin vessel emphasis (4× weighting)
 - 📊 **F1 Score: 0.7519** on validation set (within 3% of U-Net baseline)
 - 🎨 **High Recall (78%)**: Optimized for clinical screening applications
-- ⚡ **Fast Inference**: ~50ms per image on GPU
 - 🔧 **Modular Design**: Easy to adapt for other medical imaging tasks
 - 📈 **Comprehensive Evaluation**: Detailed metrics and visualizations
 

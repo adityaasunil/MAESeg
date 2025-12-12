@@ -426,7 +426,7 @@ This project is licensed under the MIT License - see [LICENSE](https://github.co
 
 ## 🙏 Acknowledgments
 
-- MAE implementation based on Facebook AI Research
+- MAE implementation based on Facebook AI Research and [IcarusWizard/MAE](https://github.com/IcarusWizard/MAE)
 - Dataset: [APTOS-2019](https://www.kaggle.com/datasets/mariaherrerot/aptos2019/data), [Retina Dataset](https://www.kaggle.com/datasets/abdallahwagih/retina-blood-vessel/data)
 - Computing resources: [Google Colab](https://colab.research.google.com/)
 - Inspiration from various SOTA vessel segmentation methods

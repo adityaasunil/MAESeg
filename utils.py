@@ -10,9 +10,9 @@ PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '.'))
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'mps' if 'mps' in torch.backends and torch.backends.mps.is_available() else 'cpu')
+device = torch.device('cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu')
 
-def denorm(tensor, std, mean):
+def denorm(tensor, std:float = 0.5, mean:float = 0.5):
     """
     Denormalizes a tensor using the provided standard deviation and mean
     

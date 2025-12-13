@@ -208,7 +208,7 @@ vessel_mask = prediction[0, 0].cpu().numpy()
 ### Stage 1: MAE Pretraining (Unlabeled Data)
 
 ```bash
-python train_mae.py \
+python mae_pretrain.py \
     --data_dir path/to/unlabeled/images \
     --batch_size 16 \
     --epochs 200 \
